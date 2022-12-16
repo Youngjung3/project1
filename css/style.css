@@ -45,26 +45,54 @@ nav:hover { background-color: #1657b4; }
 .gnb .w100{display: none;}
 .gnb .dep1:hover .w100{display: block;}
 
-.side_menu { display: flex; width: 25%; justify-content: flex-end } 
+.side_menu { display: flex; width: 30%; justify-content: flex-end } 
 .side_menu li a { color: #fff; padding: 10px; font-size: 1.2rem; line-height: 80px; } 
 .qu { padding: 15px; } 
 
 /* main_slide */
 
 #main_slide { width: 100%; position: relative;  z-index: -9999;} 
-#main_slide .slide_cover{position: absolute; width: 100%; height: 100vh; background-image: url("../images/main01.jpg"); background-size: cover; background-repeat: no-repeat; height: 90vh;} 
+#main_slide .slide_cover{position: absolute; width: 100%; height: 800px; background-image: url("../images/main01.jpg"); background-size: cover; background-repeat: no-repeat;} 
 #main_slide .slide_cover h2,
 #main_slide .slide_cover h3,
 #main_slide .slide_cover p 
 #main_slide .slide_cover img{ position: absolute; } 
 #main_slide .slide_cover section h2{
-  color: #fff; font-size: 6rem; top: 250px; left: 30%; margin: auto; width: 800px; font-size: 45px; font-weight: bold;
+  color: #fff; width: 70%; font-size: 6rem; top: 300px; left: 50%; transform: translate(-50%, -50%); font-size: 45px; font-weight: bold; text-align: center; 
 }
 #main_slide .slide_cover section h2::after{
   content: url("../images/mainpage-ul.png");
   vertical-align: middle;
-  margin: 15px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
 }
-#main_slide .slide_cover p { bottom: 0%; right: 10%; color: #fff; font-size: 2.4em; width: 400px; } 
-
+#main_slide .slide_cover .weather{position: absolute; width: 500px; top: 400px; left: 50%; transform: translate(-50%, -50%);}
+#main_slide .slide_cover p {color: #fff; font-size: 2.2em; font-weight: bold;} 
+#main_slide .slide_cover .weather .nowrap{display: inline;}
+#main_slide .slide_cover .weather span{margin: 10px;}
+#main_slide .slide_cover .weather span::before{
+  content: url("../images/weather04.png");
+  vertical-align: top;
+}
+#main_slide .slide_cover .weather button{
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.716);
+  border: none;
+  padding: 2px;
+}
+#main_slide .slide_cover .weather button img{
+  vertical-align: middle;
+  padding: 5px;
+}
+#main_slide .slide_cover .main_text p {color: #fff; font-size: 1.4em; }
+#main_slide .slide_cover .main_text h5 {color: #fff; font-size: 2.2em; font-weight: bold;}
+#main_slide .slide_cover .main_text {position: absolute; width: 500px; top: 600px; left: 30%; transform: translate(-50%, -50%);}
+#main_slide .slide_cover h5 input{color: #fff; border: 1px solid #fff; background-color: rgba(255, 255, 255, 0.104); padding: 0 2px;}
+.main_bottom{position: relative; top: 640px;}
+.main_bottom img{display: block; width: 2800px; height: 251px; margin: auto;  margin-left: -500px;}
+.main_bottom p{position: absolute; top: 110px; left: 70%; color: #fff; font-size: 1.3rem; font-weight: bold;}
+.main_bottom p::before{content: url("../images/aktcna.png"); display: block;}
+.main_bottom:after{content: url("../images/main_bottom_main.png"); width: 100%; height: 100%; position: absolute; top: -22px; left: 35%;} 
+/* .main_bottom{background-image: url(../images/main_bottomj.png); width: 100%; } */
 /* section */

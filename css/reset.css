@@ -2,6 +2,7 @@
 /* 구글폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* 여백초기화 */
+body{-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 *{margin: 0; padding: 0;}
 
 /* a링크 초기화 */
@@ -22,7 +23,6 @@ body, input, textarea, select, button, table{
     color: #222;
     line-height: 1.75;
 }
-
 /* 폰트스타일 초기화 */
 em, address{
     font-style: normal;
