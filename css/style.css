@@ -1,5 +1,9 @@
 @charset "utf-8"; html { overflow-y: scroll; overflow-x: hidden; } 
 body { font-family: 'NanumSQ', "나눔스퀘어", NanumGothic, "나눔고딕", sans-serif; } 
+/* layer popup */
+#layer{display: block; position: fixed; width: 500px; height: 500px; background: #ccc; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 9999999999999999999999; font-size: 2.4em; padding: 3em; box-sizing: border-box; line-height: 2; top: 50px; left: 150px;}
+#layer button{position: absolute; right: 0; top: 0; background-color: #222; color: #fff; cursor: pointer; padding:10px 20px;}
+
 .inner { max-width: 1300px; width: 100%; margin: auto; } 
 .fl { float: left; } 
 .fr { float: right; } 
@@ -85,25 +89,34 @@ main:after { clear: both; }
 .section1>.inner2 { width: 1300px; height: 800px; margin: auto; margin-top: 900px; overflow: hidden; } 
 .section1>.inner2 h6 { padding: 100px; color: rgb(75, 75, 75); text-align: center; } 
 .section1>.inner2 h6::after { content: url("../images/youtube.png"); display: block; position: relative; bottom: 40px; left: 30px; } 
-.section1>.inner2 .youtube { width: 712px; height: 500px; margin: auto; position: relative; bottom: 100px; border: 5px solid #1657b4; border-radius: 15px; } 
+.section1>.inner2 .youtube { width: 712px; height: 500px; margin: auto; position: relative; bottom: 100px; border: 3px solid #1657b4; border-radius: 15px; } 
 .section1>.inner2 .youtube h5, p { text-align: center; vertical-align: bottom; } 
 .section1>.inner2 .youtube h5 { font-size: 24px; font-weight: bold; margin: 50px 0 0; color: #555; } 
 .section1>.inner2 .youtube p { font-size: 16px; margin: 20px 0 10px; color: #3375be; } 
 
 /* section2 */
 
-.travel { position: relative; width: 100%; height: 1000px;} 
-.travel .travel-inner{ position: relative; max-width: 1300px; width: 100%; height: 100%; margin: auto;}
-.travel .travel-inner .map {position: absolute; background-image: url("../images/map.png"); width: 598px; height: 917px; background-repeat: no-repeat; margin: 20px; left: -191px; } 
-.travel .travel-inner .place{position: relative; display: block; text-align: right; width: 70%; margin-left: 380px; top: 100px; }
-.travel .travel-inner .place p{position: absolute; text-align: end; padding-top: 50px; top: -50px; right: 10px; color: #666; font-size: 16px;}
+.travel { position: relative; width: 100%; height: 1000px; } 
+.travel .travel-inner { position: relative; max-width: 1300px; width: 100%; height: 100%; margin: auto; } 
+.travel .travel-inner .map { position: absolute; background-image: url("../images/map.png"); width: 598px; height: 917px; background-repeat: no-repeat; margin: 20px; left: -191px; } 
+.travel .travel-inner .place { position: relative; display: block; text-align: right; width: 70%; margin-left: 380px; top: 100px; } 
+.travel .travel-inner .place p { position: absolute; text-align: end; padding-top: 50px; top: -50px; right: 10px; color: #666; font-size: 16px; } 
+.travel .travel-inner .item { position: relative; display: inline-block; top: 150px; left: 550px; margin: 0 50px; } 
+.travel .travel-inner .item .circle { position: absolute; background-color: #3375be; width: 73px; height: 73px; border-radius: 50%; } 
+.travel .travel-inner .item:nth-child(even) .circle { background-color: #2b425b; } 
+.travel .travel-inner .item .circle::before { content: "자연/사찰"; position: absolute; bottom: 77px; left: 4px; color: #666; font-size: 15px; } 
+.travel .travel_box { position: relative; top: 280px; left: 600px; } 
+.travel .travel_box .course_text { position: absolute; display: flex; align-items: flex-end; } 
+.travel .travel_box .course_text p { display: block; width: 100px; margin-left: 50px; font-size: 15px; color: #666; } 
+.travel .travel_box .course { position: absolute; width: 700px; height: 400px; border: 1px solid #ccc; margin-top: 100px; } 
 
-.travel .travel-inner .item .circle{
-  background-color: #3375be;
-  display: block;
-  position: relative;
-  width: 73px;
-  height: 73px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
+/* 3place */
+.place3{position: relative; width: 100%; height: 800px;}
+.place3 .placebg{position: absolute; background-image: url("../images/section3_bg.jpg"); width: 100%; height: 616px; background-repeat: no-repeat; background-size: cover;}
+.place3 .place33{position: relative; max-width: 1300px; width: 100%; height: 575px; margin:auto; top: 225px; display: flex; justify-content: space-between}
+.place3 .place33 .col{width: 403px; height: 575px; background-color: #41c1e14c;}
+
+/* story */
+.story{position: relative; width: 100%; height: 1300px; margin-top: 50px; background-color: #ccc;}
+.story p{text-align: center; font-size: 16px; color: #666; line-height: 400px; font-weight: bold;} 
+.story p::before{content: url("../images/story.png"); position: absolute; top: -20px;}
