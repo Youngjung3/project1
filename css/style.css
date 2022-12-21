@@ -117,6 +117,176 @@ main:after { clear: both; }
 .place3 .place33 .col{width: 403px; height: 575px; background-color: #41c1e14c;}
 
 /* story */
-.story{position: relative; width: 100%; height: 1300px; margin-top: 50px; background-color: #ccc;}
+.story{position: relative; max-width: 1920px; width: 100%; background-image: url("../images/story_bg.jpg"); background-repeat: no-repeat; background-color: #fff; margin: auto; z-index: -500;}
 .story p{text-align: center; font-size: 16px; color: #666; line-height: 400px; font-weight: bold;} 
 .story p::before{content: url("../images/story.png"); position: absolute; top: -20px;}
+.story .story-inner{display: flex;}
+.story .story-inner .story_left{
+  position: relative;
+  width: 35%;
+  margin-right: 100px;
+}
+.story .story-inner .story_left .fixed_left{
+  position: sticky;
+  display: block;
+  top: 44px;
+  width: 100%;
+  height: 580px;
+  background-color: #2b425b;
+  border-radius:0 0 50px 0;
+  margin-bottom: 200px;
+}
+.story .story-inner .story_left .fixed_left img{
+  width: 100%;
+}
+
+.story .story-inner .story_right{
+  width: 60%;
+}
+.story .story-inner .story_right .story_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.story .mb{margin-bottom:20px; display: flex;}
+.story .mb .n1{margin-top:0px;}
+.story .mb .n2{margin-top:60px;}
+.story .mb .n3{margin-top:-100px;}
+.story .story-inner .story_right .story_col{
+  position: relative;
+  display: block;
+  padding-right: 82px;
+  flex: 0 1 33.333%;
+  width: 30%;
+  margin-bottom: 250px;
+  max-width: 231px;
+  max-height: 193px;
+}
+.story .story-inner .story_right .story_col::before{
+  content: '';
+  position: absolute;
+  bottom: -156px;
+  right: 60px;
+  border: 1px solid rgba(102, 102, 102, 0.208);
+  display: block;
+  width: 75%;
+  height: 170%;
+  border-radius: 0 0 30px 0;
+  z-index: -5;
+}
+.story .story-inner .story_right .story_col::after{
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 30px;
+  height: 92px;
+  background-color: #fff;
+  z-index: -3;
+}
+.story .story-inner .story_right .story_col .cut_img{
+  width: 236px;
+  height: 197px;
+  overflow: hidden;
+}
+.story .story-inner .story_right .story_col img{
+  width: 100%;
+  height: 100%;
+  max-width: 231px;
+  max-height: 193px;
+}
+.story .story-inner .story_right .col_text{
+  display: flex;
+  flex-direction: column;
+}
+.story .story-inner .story_right .col_text span{
+  display: block;
+  width: 50%;
+  font-size: 15px;
+  color: #1a1a1a;
+  padding: 3px;
+  border:2px solid #1a1a1a;
+  border-top: none;
+  border-bottom: none;
+}
+.story .story-inner .story_right .col_text strong{
+  font-size: 18px;
+  color: #1a1a1a;
+}
+.story .story-inner .story_right .col_text em{
+  font-size: 15px;
+  color: #3375be;
+}
+
+/* footmenu */
+.footmenu{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color:#3374be;
+  margin-top: 200px;
+}
+.footmenu .wave{
+  position: relative;
+  top: -259px;
+  width: 100%;
+  background: url('../images/wave.png') no-repeat left top;
+  background-size: cover;
+  min-height: 295px;
+  z-index: 10;
+}
+.footmenu::before{
+  content: '';
+  position: absolute;
+  background: url('../images/wave_before.png') no-repeat left top;
+  width: 100%;
+  height: 100%;
+  top: -315px;
+  z-index: 9;
+}
+.footmenu:after{
+  content: '';
+  position: absolute;
+  background: url('../images/wave_after.png') no-repeat right top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: -516px;
+  z-index: 9;
+}
+.footmenu .footmenu_inner{
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  height: 600px;
+  background-color: #c9565665;
+  margin: -150px auto 0 auto;
+}
+.footmenu .footmenu_inner p{
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+.footmenu .footmenu_inner strong{
+  color: #fff;
+  text-align: left;
+  font-size: 42px;
+}
+.footmenu .footmenu_inner .f_icon{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footmenu .footmenu_inner .f_menu{background-color: #fff; width: 110px; height: 110px; border-radius: 50%; margin-bottom: 10px;}
+.footmenu .footmenu_inner .f_icon a{
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+/* footer */
+/* #footer{
+  width: 100%;
+  height: 300px;
+  background: #666;
+} */
+
