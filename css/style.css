@@ -376,18 +376,28 @@ main:after {
   clear: both;
 }
 
-/* section */
-
+/* section  youtube*/
 .section1 > .inner2 {
   width: 1300px;
   height: 800px;
   margin: auto;
   margin-top: 900px;
-  overflow: hidden;
+  position: relative;
+}
+.section1 > .inner2::before{
+  content: '';
+  position: absolute;
+  background: url(../images/background_youtube.png) no-repeat;
+  top: 20px;
+  left: -279px;
+  width: 100%;
+  height: 100%;
 }
 .section1 > .inner2 h6 {
   padding: 100px;
-  color: rgb(75, 75, 75);
+  font-size: 14px;
+  font-weight: bold;
+  color: #4b4b4b;
   text-align: center;
 }
 .section1 > .inner2 h6::after {
@@ -397,10 +407,42 @@ main:after {
   bottom: 40px;
   left: 30px;
 }
+.section1 > .inner2 .youtube_content{
+  display: flex;
+}
+.section1 .inner2 .youtube_prev{
+  position: relative;
+  left: 100px;
+  top: 10px;
+}
+.section1 .inner2 .youtube_prev i{
+  background: url(../images/ir-main.png) no-repeat;
+  background-position: -361px -400px;
+  display: block;
+  width: 143px;
+  height: 47px;
+}
+.section1 .inner2 .youtube_prev em{
+  position: relative;
+  right: 50px;
+  display: block;
+  font-size: 17px;
+  padding: 15px 0 15px 0;
+  width: 188px;
+  text-align: right;
+}
+.section1 .inner2 .youtube_prev span{
+  width: 116px;
+  height: 116px;
+  display: block;
+  background: url(../images/youtube01.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
 .section1 > .inner2 .youtube {
   width: 712px;
   height: 500px;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
   bottom: 100px;
   border: 3px solid #1657b4;
@@ -421,6 +463,36 @@ p {
   font-size: 16px;
   margin: 20px 0 10px;
   color: #3375be;
+}
+.section1 .inner2 .youtube_next{
+  position: relative;
+  top: 10px;
+  right: 50px;
+}
+.section1 .inner2 .youtube_next i{
+  background: url(../images/ir-main.png) no-repeat;
+  background-position: -541px -400px;
+  display: block;
+  width: 143px;
+  height: 47px;
+}
+.section1 .inner2 .youtube_next em{
+  position: relative;
+  display: block;
+  font-size: 17px;
+  padding: 15px 0 15px 0;
+  width: 188px;
+  text-align: left;
+}
+.section1 .inner2 .youtube_next span{
+  position: relative;
+  left: 20px;
+  width: 116px;
+  height: 116px;
+  display: block;
+  background: url(../images/youtube02.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
 
 /* section2 */
@@ -446,6 +518,30 @@ p {
   margin: 20px;
   left: -191px;
 }
+.travel .travel-inner .map .onmap1{
+  position: absolute;
+  left: 245px;
+  top: 115px;
+  /* display: none; */
+}
+.travel .travel-inner .map .onmap2{
+  position: absolute;
+  right: 10px;
+  top: 115px;
+  display: none;
+}
+.travel .travel-inner .map .onmap3{
+  position: absolute;
+  left: 110px;
+  top: 270px;
+  display: none;
+}
+.travel .travel-inner .map .onmap4{
+  position: absolute;
+  right: 18px;
+  top: 325px;
+  display: none;
+}
 .travel .travel-inner .place {
   position: relative;
   display: block;
@@ -469,6 +565,16 @@ p {
   top: 150px;
   left: 550px;
   margin: 0 50px;
+}
+.travel .travel-inner .item em{
+  position: absolute;
+  top: 20%;
+  left: 30%; 
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  display: none;
 }
 .travel .travel-inner .item .circle,.circle3,.circle5,.circle7{
   position: absolute;
@@ -612,12 +718,18 @@ p {
   content: "";
   display: block;
   background: url(../images/ir-main.png) no-repeat;
-  position: relative;
+  position: absolute;
   top: 22px;
   left: 25px;
   width: 50px;
   height: 50px;
   background-position: -995px -210px;
+}
+.travel .travel-inner .item span:hover::after{
+  display: none;
+}
+.travel .travel-inner .item span:hover em{
+  display: block;
 }
 .travel .travel_box {
   position: relative;
@@ -635,6 +747,14 @@ p {
   margin-left: 50px;
   font-size: 15px;
   color: #666;
+  background: url(../images/check.png) no-repeat;
+  background-position: bottom center;
+  /* background-image: none; */
+}
+.travel .travel_box .course_text p strong{
+  color: #3375be;
+  font-size: 18px;
+  font-weight: bold;
 }
 .travel .travel_box .course {
   position: absolute;
@@ -643,7 +763,73 @@ p {
   border: 1px solid #ccc;
   margin-top: 100px;
 }
+.travel .travel_box .course strong{
+  position: relative;
+  top: 50px;
+  left: 70px;
+  display: inline-block;
+  font-size: 24px;
+  color: #3d7199;
+  padding-top: 56px;
+  margin-bottom: 20px;
+}
+.travel .travel_box .course strong::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/ir-main.png) no-repeat -495px -291px;
+  width: 92px;
+  height: 49px;
+}
+.travel .travel_box .course strong em{
+  font-size: 15px;
+  font-weight: normal;
+}
+.travel .travel_box .course .course_list{
+  position: relative;
+  display: block;
+  width: 390px;
+  word-break: keep-all;
+  top: 40px;
+  left: 70px;
 
+}
+.travel .travel_box .course .course_list a{
+  color: #666;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.travel .travel_box .course .course_list a:hover{
+  text-decoration: underline;
+}
+.travel .travel_box .course1>a{
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: #3375be;
+  border-radius: 30px;
+  padding: 8px 33px;
+  margin-top: 60px;
+  margin-left: 70px;
+}
+.travel .travel_box .course1 span{
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.travel .travel_box .course .course_image{
+  position: absolute;
+  top: 100px;
+  right: -30px;
+  background: url(../images/course1.jpg) no-repeat;
+  display: block;
+  background-size: cover;
+  width: 270px;
+  height: 270px;
+}
 /* 3place */
 .place3 {
   position: relative;
@@ -672,6 +858,51 @@ p {
   width: 403px;
   height: 575px;
   background: url(../images/col1.jpg) no-repeat;
+}
+.place3 .place33 p{
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  color: #666;
+  padding-top: 10px;
+  border: 1px solid #333;
+  min-width: 153px;
+  top: 80px;
+  left: 32%;
+}
+.place3 .place33 .pwhite{
+  color: #fff;
+  border: 1px solid #fff;
+}
+.place3 .place33 strong{
+  position: relative;
+  color: #fff;
+  top: 29%;
+  right: 65px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.place3 .place33 em{
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  top: 32%;
+  left: 66px;
+  min-width: 270px;
+}
+.place3 .place33 .emcolor{
+  color: #494949;
+}
+.place3 .place33 .pcolor{
+  color: #494949;
+}
+.place3 .place33 .str3{
+  right: 20px;
 }
 .place3 .place33 .col2 {
   width: 403px;
