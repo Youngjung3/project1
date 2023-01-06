@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCKP4K9D2N"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,17 +8,12 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-ZCKP4K9D2N");
     </script>
     <meta charset="UTF-8" >
-    <!-- 익스호환성 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <!-- 반응형 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <!-- 검색엔진 -->
     <meta name="robot" content="index, follow" >
-    <!-- 사이트밑에 소개 -->
     <meta name="description" content="울진문화관광입니다. 김영중의 반응형 프로젝트1" >
     <meta name="author" content="김영중" >
     <meta name="keyword" content="울진, 관광, 문화, 포트폴리오, 프론트엔드" >
@@ -46,8 +40,7 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" >
     <meta name="theme-color" content="#ffffff" >
     <title>울진군문화관광</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
   </head>
   <body>
     <div id="layer">
@@ -57,6 +50,7 @@
         <button>닫기</button>
     </div>
     <header id="header">
+      <h1>울진군문화관광</h1>
       <ul class="link">
         <li><a href="#">본문 바로가기</a></li>
         <li><a href="#">문화관광</a></li>
@@ -92,15 +86,16 @@
 
       <nav id="nav">
         <div class="logo">
-          <span
-            ><a href="#"><img src="images/logo.png" alt="로고"></a></span>
+          <span>
+            <a href="#"><img src="images/logo.png" alt="로고"></a>
+          </span>
         </div>
         <ul class="gnb">
           <li class="dep1">
             <a href="#">이야기하다</a>
             <div class="w100">
               <div class="inner">
-                <img src="images/nav01.png" alt="메뉴사진1" width="350" height="150" >
+                <strong class="nav_img1">이야기하다</strong>
                 <ul class="right">
                   <li>
                     <ul class="row">
@@ -162,7 +157,7 @@
             <a href="#">둘러보다</a>
             <div class="w100">
               <div class="inner">
-                <img src="images/nav02.png" alt="메뉴사진1" width="350" height="150" >
+                <strong class="nav_img2">둘러보다</strong>
                 <ul class="right">
                   <li>
                     <ul class="row nor">
@@ -191,7 +186,7 @@
             <a href="#">즐겨보다</a>
             <div class="w100">
               <div class="inner">
-                <img src="images/nav03.png" alt="메뉴사진1" width="350" height="150" >
+                <strong class="nav_img3">즐겨보다</strong>
                 <ul class="right">
                   <li>
                     <ul class="row">
@@ -250,7 +245,7 @@
             <a href="#">역사/문화</a>
             <div class="w100">
               <div class="inner">
-                <img src="images/nav04.png" alt="메뉴사진1" width="350" height="150" >
+                <strong class="nav_img4">역사/문화</strong>
                 <ul class="right">
                   <li>
                     <ul class="row">
@@ -326,7 +321,7 @@
             <a href="#">맛집/숙박/특산물</a>
             <div class="w100">
               <div class="inner">
-                <img src="images/nav05.png" alt="메뉴사진1" width="350" height="150" >
+                <strong class="nav_img5">맛집/숙박/특산물</strong>
                 <ul class="right">
                   <li>
                     <ul class="row">
@@ -373,7 +368,7 @@
             <a href="#">여행가이드</a>
             <div class="w100">
               <div class="inner">
-                <img src="images/nav06.png" alt="메뉴사진1" width="350" height="150" >
+                <strong class="nav_img6">여행가이드</strong>
                 <ul class="right">
                   <li>
                     <ul class="row">
@@ -468,9 +463,9 @@
       </div>
       <div class="main_bottom">
          
-            <div class="aktcna">
-              <a href="#"><img src="./images/aktcna.png" alt=""></a>
-              <p><a href="#">맞춤형 울진관광 추천 서비스</a></p>
+            <div class="custom">
+              <strong>맞춤,관광지</strong>
+              <p>맞춤형 울진관광 추천 서비스</p>
             </div>
           
       </div>
@@ -504,14 +499,14 @@
     <div class="travel">
       <div class="travel-inner">
         <div class="map">
-            <img src="./images/map1.png" class="onmap1" alt="">
-            <img src="./images/map2.png" class="onmap2" alt=""> 
-            <img src="./images/map3.png" class="onmap3" alt="">
-            <img src="./images/map4.png" class="onmap4" alt="">
+            <img src="./images/map1.png" class="onmap1" alt="북부권">
+            <img src="./images/map2.png" class="onmap2" alt="서부권"> 
+            <img src="./images/map3.png" class="onmap3" alt="남부권">
+            <img src="./images/map4.png" class="onmap4" alt="드라이브">
         </div>
         <div class="place">
           <p>다양한 울진관광명소를 한눈에!</p>
-          <img src="./images/place.png" alt="">
+          <img src="./images/place.png" alt="핫플레이스">
         </div>
         <div class="place-menu">
           <div class="item">
@@ -552,7 +547,7 @@
         </div>
         <div class="travel_box">
           <div class="course_text">
-            <img src="./images/course.png" alt="">
+            <img src="./images/course.png" alt="추천코스여행">
             <p><strong>북부권</strong><br>삼척·강릉 출발</p>
             <p><strong>서부권</strong><br>영주·봉화 출발</p>
             <p><strong>남부권</strong><br>영덕·포항 출발</p>
@@ -615,7 +610,7 @@
       <div class="story-inner">
         <div class="story_left">
           <a href="#" class="fixed_left">
-            <img src="./images/story_left.jpg" alt="">
+            <img src="./images/story_left.jpg" alt="국립해양과학관">
             <div class="left_bottom">
               <div class="category">
                 <span class="label">명소찾아<br> 삼만리</span>
@@ -633,7 +628,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_01.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_01.jpg" alt="왕피천케이블카"></div>
                   <div class="col_text">
                     <span>색다른 축제,체험</span>
                     <strong>왕피천케이블카</strong>
@@ -643,7 +638,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_02.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_02.jpg" alt="">평해사구습지생태공원</div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>평해사구습지생태공원</strong>
@@ -653,7 +648,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_03.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_03.jpg" alt="트래킹 코스"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>1박 2일 트래킹 코스</strong>
@@ -665,7 +660,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_04.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_04.jpg" alt="은어다리"></div>
                   <div class="col_text">
                     <span>명소찾아 삼만리</span>
                     <strong>은어다리</strong>
@@ -675,7 +670,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_05.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_05.jpg" alt="왕피천공원"></div>
                   <div class="col_text">
                     <span>명소찾아 삼만리</span>
                     <strong>왕피천공원 두 번째 이야기</strong>
@@ -685,7 +680,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_06.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_06.jpg" alt="죽변항 수산물 축제"></div>
                   <div class="col_text">
                     <span>확트인 바다,풍경</span>
                     <strong>죽변항 수산물 축제</strong>
@@ -697,7 +692,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_07.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_07.jpg" alt="등기산공원/스카이워크"></div>
                   <div class="col_text">
                     <span>확트인 바다,풍경</span>
                     <strong>등기산공원/스카이워크</strong>
@@ -707,7 +702,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_08.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_08.jpg" alt="금강송 테마전시관/에코리움"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>금강송 테마전시관/에코리움</strong>
@@ -717,7 +712,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_09.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_09.jpg" alt="울진 불영사"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>울진 불영사</strong>
@@ -729,7 +724,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_10.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_10.jpg" alt="금강소나무숲길"></div>
                   <div class="col_text">
                     <span>확트인 바다,풍경</span>
                     <strong>금강소나무숲길(2코스)</strong>
@@ -739,7 +734,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_11.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_11.jpg" alt="금강소나무숲길"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>금강소나무숲길(4코스)</strong>
@@ -749,7 +744,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_12.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_12.jpg" alt="금강소나무숲길"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>금강소나무숲길(3코스)</strong>
@@ -761,7 +756,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_13.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_13.jpg" alt="금강소나무숲길"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>금강소나무숲길(1코스)</strong>
@@ -771,7 +766,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_14.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_14.jpg" alt="왕피천생태탐방로"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>왕피천생태탐방로(은어길)</strong>
@@ -781,7 +776,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_15.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_15.jpg" alt="왕피천생태탐방로"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>왕피천생태탐방로(2-1구간)</strong>
@@ -793,7 +788,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_16.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_16.jpg" alt="왕피천생태탐방로"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>왕피천생태탐방로(1-1구간)</strong>
@@ -803,7 +798,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_17.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_17.jpg" alt="왕피천생태탐방로"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>왕피천생태탐방로(1구간)</strong>
@@ -813,7 +808,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_18.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_18.jpg" alt="구수곡자연휴양림"></div>
                   <div class="col_text">
                     <span>울진에서 힐링</span>
                     <strong>구수곡자연휴양림</strong>
@@ -825,7 +820,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_19.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_19.jpg" alt="백암온천과 신선계곡"></div>
                   <div class="col_text">
                     <span>명소찾아 삼만리</span>
                     <strong>백암온천과 신선계곡</strong>
@@ -835,7 +830,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_20.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_20.jpg" alt="덕구온천"></div>
                   <div class="col_text">
                     <span>명소찾아 삼만리</span>
                     <strong>덕구온천</strong>
@@ -845,7 +840,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_21.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_21.jpg" alt="민물고기 생태체험관"></div>
                   <div class="col_text">
                     <span>명소찾아 삼만리</span>
                     <strong>민물고기 생태체험관</strong>
@@ -857,7 +852,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_22.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_22.jpg" alt="울진왕피천공원"></div>
                   <div class="col_text">
                     <span>명소찾아 삼만리</span>
                     <strong>울진왕피천공원</strong>
@@ -867,7 +862,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_23.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_23.jpg" alt="성류굴"></div>
                   <div class="col_text">
                     <span>명소찾아 삼만리</span>
                     <strong>성류굴</strong>
@@ -877,7 +872,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_24.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_24.jpg" alt="울진금강송 송이축제"></div>
                   <div class="col_text">
                     <span>색다른 축제,체험</span>
                     <strong>제15회 울진금강송 송이축제</strong>
@@ -889,7 +884,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_25.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_25.jpg" alt="울진 워터피아 페스타"></div>
                   <div class="col_text">
                     <span>색다른 축제,체험</span>
                     <strong>제7회 울진 워터피아 페스타</strong>
@@ -899,7 +894,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_26.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_26.jpg" alt="울진요트학교"></div>
                   <div class="col_text">
                     <span>색다른 축제,체험</span>
                     <strong>울진요트학교(요트와 윈드서핑)</strong>
@@ -909,7 +904,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_27.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_27.jpg" alt="울진 해양레포츠센터"></div>
                   <div class="col_text">
                     <span>색다른 축제,체험</span>
                     <strong>울진 해양레포츠센터</strong>
@@ -921,7 +916,7 @@
             <div class="mb">
               <div class="story_col n1">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_28.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_28.jpg" alt="붉은대게 축제"></div>
                   <div class="col_text">
                     <span>색다른 축제,체험</span>
                     <strong>울진대게와 붉은대게 축제</strong>
@@ -931,7 +926,7 @@
               </div>
               <div class="story_col n2">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_29.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_29.jpg" alt="울진 대게"></div>
                   <div class="col_text">
                     <span>색다른 축제,체험</span>
                     <strong>울진 대게</strong>
@@ -941,7 +936,7 @@
               </div>
               <div class="story_col n3">
                 <a href="#">
-                  <div class="cut_img"><img src="./images/story_right_30.jpg" alt=""></div>
+                  <div class="cut_img"><img src="./images/story_right_30.jpg" alt="울진바다"></div>
                   <div class="col_text">
                     <span>확트인 바다,풍경</span>
                     <strong>울진바다에서 보내는 하루</strong>
@@ -952,7 +947,7 @@
             </div>
             <div class="story_col n1">
               <a href="#">
-                <div class="cut_img"><img src="./images/story_right_31.jpg" alt=""></div>
+                <div class="cut_img"><img src="./images/story_right_31.jpg" alt="해수욕장과 해파랑길"></div>
                 <div class="col_text">
                   <span>확트인 바다,풍경</span>
                   <strong>울진의 해수욕장과 해파랑길</strong>
@@ -1073,7 +1068,7 @@
         <div class="foot_left">
           <p class="footer_qr">
             <a href="#">
-              <img src="./images/qr.png" alt="">
+              <img src="./images/qr.png" alt="qr코드">
             </a>
           </p>
         </div>
@@ -1087,14 +1082,14 @@
             <li><a href="#">울진오시는길</a></li>
           </ul>
           <div class="address">
-            <address>36323 경상북도 울진군 울진읍 울진중앙로 121</address>
-            <span>대표전화 054-782-1501</span>
-            <span>팩스 054-789-6309</span>
+            <address>33333 경상북도 울진군 울진읍 울진중앙로 121</address>
+            <span>대표전화 054-123-3333</span>
+            <span>팩스 054-123-3333</span>
           </div>
           <p>Copyright © 2017 Uljin-gun All right reserved.</p>
         </div>
-        <a href="https://validator.w3.org/check?uri=https://youngjung3.github.io/project1/"><img src="https://www.w3.org/QA/Tools/I_heart_validator_lg" alt="유효성검사"></a>
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://youngjung3.github.io/project1/"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="유효성검사"></a>
+        <a href="https://validator.w3.org/check?uri=https://youngjung3.github.io/project1/" target="_blank"><img src="https://www.w3.org/QA/Tools/I_heart_validator_lg" alt="유효성검사"></a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://youngjung3.github.io/project1/" target="_blank"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="유효성검사"></a>
       </div>
     </footer>
     <script src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
