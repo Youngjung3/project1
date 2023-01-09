@@ -3,8 +3,9 @@ $(function () {
     document.querySelector("#layer").style.display = "none";
   });
 
-  const visual = $(".slide_cover>ul>li");
+  const visual = $(".main_slide_cover>li");
   const button = $("#buttonList>li");
+  const button2 = $(".map>img")
   let current = 0;
   let btnIdx = 0;
   let id;
@@ -39,10 +40,10 @@ $(function () {
 
   clearAuto();
   function clearAuto() {
-    $(".slide_cover, #buttonList, .controls").mouseenter(function () {
+    $("main_slide_cover, #buttonList, .controls").mouseenter(function () {
       clearInterval(id);
     });
-    $(".slide_cover, #buttonList, .controls").mouseleave(function () {
+    $("main_slide_cover, #buttonList, .controls").mouseleave(function () {
       timer();
     });
   }
@@ -56,7 +57,6 @@ $(function () {
       }
       button.removeClass("on");
       button.eq(btnIdx).addClass("on");
-
       let cu = visual.eq(current);
       let ne = visual.eq(btnIdx);
       cu.css("left", "0").stop().animate({ left: "-100%" });

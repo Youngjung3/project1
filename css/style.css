@@ -113,6 +113,7 @@ h1{
   position: relative;
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 2;
 }
 nav:hover {
   background-color: #1657b4;
@@ -275,7 +276,7 @@ nav:hover .qu {
 #main_slide {
   width: 100%;
   position: relative;
-  z-index: -9999;
+  z-index: 1;
 }
 #main_slide .slide_cover {
   position: absolute;
@@ -455,6 +456,7 @@ nav:hover .qu {
   height: 251px;
   margin: auto;
   background-position: center;
+  z-index: 45;
 }
 .main_bottom .custom {
   position: relative;
@@ -664,7 +666,7 @@ p {
   position: absolute;
   left: 245px;
   top: 115px;
-  /* display: none; */
+  display: none;
 }
 .travel .travel-inner .map .onmap2{
   position: absolute;
@@ -683,6 +685,9 @@ p {
   right: 18px;
   top: 325px;
   display: none;
+}
+.travel .travel-inner .map .on2{
+  display: block;
 }
 .travel .travel-inner .place {
   position: relative;
