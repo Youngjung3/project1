@@ -219,7 +219,6 @@ nav:hover .qu {
   font-size: 1.2rem;
   color: #333;
 }
-
 .gnb li .w100::before {
   position: absolute;
   content: "";
@@ -229,9 +228,6 @@ nav:hover .qu {
   right: calc(50% + 30rem);
   z-index: 5;
 }
-/* .gnb li .inner img{
-  background-position: 0 0;
-} */
 .gnb li ul .row {
   display: flex;
   width: 700px;
@@ -284,10 +280,42 @@ nav:hover .qu {
 #main_slide .slide_cover {
   position: absolute;
   width: 100%;
+  min-width: 1000px;
   height: 800px;
-  background-image: url("../images/main01.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#main_slide .slide_cover ul{
+  display: flex;
+  position: relative;
+}
+#main_slide .slide_cover ul li{
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: absolute;
+}
+#main_slide .slide_cover ul li>img{
+  width: 100%;
+}
+#main_slide .slide_cover ul .main_0{
+  left: 0%;
+  text-align: center;
+}
+#main_slide .slide_cover ul .main_1{
+  left: 100%;
+  text-align: center;
+}
+#main_slide .slide_cover ul .main_2{
+  left: 200%;
+  text-align: center;
+}
+#main_slide .slide_cover ul .main_3{
+  left: 300%;
+  text-align: center;
+}
+#main_slide .slide_cover ul .main_4{
+  left: 400%;
+  text-align: center;
 }
 #main_slide .slide_cover h2,
 #main_slide .slide_cover h3,
@@ -365,6 +393,58 @@ nav:hover .qu {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.104);
   padding: 0 2px;
+}
+#main_slide .slide_cover h5::before{
+  content: '지금여기는, -------------------';
+  width: 300px;
+  height: 100px;
+  display: block;
+  font-size: 16px;
+  position: absolute;
+  top: -30px;
+  left: 15%;
+}
+#main_slide .slide_cover #buttonList{
+  display: flex;
+  position: relative;
+  top: 500px;
+  left: 35%;
+}
+#main_slide .slide_cover #buttonList li{
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+#main_slide .slide_cover #buttonList .on{
+  background-color: #fff;
+}
+#main_slide .slide_cover .controls {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  top: 200px;
+  display: flex;
+}
+#main_slide .slide_cover .controls li{
+  position: absolute;
+  width: 100px;
+  height: 200px;
+}
+#main_slide .slide_cover .controls li a{
+  cursor: pointer;
+  font-size: 150px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.459);
+  display: block;
+}
+#main_slide .slide_cover .controls .prev{
+  left: 0;
+}
+#main_slide .slide_cover .controls .next{
+  right: 0;
 }
 .main_bottom {
   position: absolute;
