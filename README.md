@@ -26,15 +26,22 @@
 <!-- 사용한 기술환경 (언어와 버전을 작성) -->
 - Tech 1 - HTML5
 - Tech 2 - CSS3
-- Tech 3 - ES6
+- Tech 3 - jQuery
 
 
 ## Hierarchy
 <!-- 가능할 경우 html 구조를 트리구조로 표현 -->
 ```text
-folder1/
-└── folder2/
-    ├── folder3/
+body/
+└── header/
+    ├── link/
+    │
+    ├── nav/ 
+    │   ├── logo
+    |   ├── gnb
+    |   └── side_menu
+    main/
+    ├── main_slide/
     │   ├── file1
     │   └── file2
     └── folder4/
@@ -77,7 +84,7 @@ Give credit here.
 
 
 ## Contact
-Created by [@YoungJung](youngj5396@gmail.com) - 언제든지 연락주세요!
+Created by [@Youngjung3](youngj5396@gmail.com) - 언제든지 연락주세요!
 
 
 <!-- Optional -->

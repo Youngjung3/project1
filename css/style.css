@@ -886,22 +886,35 @@ p {
 .travel .travel_box .course_text {
   position: absolute;
   display: flex;
-  align-items: flex-end;
 }
 .travel .travel_box .course_text p {
+  position: relative;
   display: block;
   width: 100px;
   margin-left: 50px;
   font-size: 15px;
   color: #666;
-  background: url(../images/check.png) no-repeat;
-  background-position: bottom center;
-  /* background-image: none; */
+  cursor: pointer;
 }
 .travel .travel_box .course_text p strong{
-  color: #3375be;
+  color: #554c4c;
   font-size: 18px;
   font-weight: bold;
+}
+.travel .travel_box .course_text p .first_co{
+  color: #3375be;
+}
+.travel .travel_box .course_text p span{
+  display: none;
+}
+.travel .travel_box .course_text p img{
+  position: absolute;
+  left: 40%;
+  top: 35px;
+  display: none;
+}
+.travel .travel_box .course_text .on3{
+  display: block;
 }
 .travel .travel_box .course {
   position: absolute;
@@ -909,6 +922,13 @@ p {
   height: 400px;
   border: 1px solid #ccc;
   margin-top: 100px;
+}
+.travel .travel_box .course .course1{
+  position: absolute;
+  display: none;
+}
+.travel .travel_box .course .on4{
+  display: block;
 }
 .travel .travel_box .course strong{
   position: relative;
@@ -967,16 +987,47 @@ p {
   font-size: 15px;
   font-weight: bold;
 }
-.travel .travel_box .course .course_image{
+.travel .travel_box .course .course_image1{
   position: absolute;
-  top: 100px;
-  right: -30px;
-  background: url(../images/course1.jpg) no-repeat;
+  top: 80px;
+  right: -350px;
+  background: url('../images/course1.jpg') no-repeat;
   display: block;
   background-size: cover;
   width: 270px;
   height: 270px;
 }
+.travel .travel_box .course .course_image2{
+  position: absolute;
+  top: 80px;
+  right: -350px;
+  background: url('../images/course2.jpg') no-repeat;
+  display: block;
+  background-size: cover;
+  width: 270px;
+  height: 270px;
+}
+.travel .travel_box .course .course_image3{
+  position: absolute;
+  top: 80px;
+  right: -350px;
+  background: url('../images/course3.jpg') no-repeat;
+  display: block;
+  background-size: cover;
+  width: 270px;
+  height: 270px;
+}
+.travel .travel_box .course .course_image4{
+  position: absolute;
+  top: 80px;
+  right: -350px;
+  background: url('../images/course4.jpg') no-repeat;
+  display: block;
+  background-size: cover;
+  width: 270px;
+  height: 270px;
+}
+
 /* 3place */
 .place3 {
   position: relative;

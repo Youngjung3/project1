@@ -79,4 +79,20 @@ $(function () {
       return false;
     });
   }
+  const course=$(".travel .travel_box .course_text p")
+  course.click(function(){
+    btnIdx = $(this).index()-1;
+    console.log(btnIdx);
+    $(".travel .map img").removeClass('on2');
+    $(".travel .travel_box .course_text>p>img").removeClass('on3');
+    $(".travel .course .course1").removeClass('on4');
+    $(".travel .travel_box .course_text>p>strong").css("color", "#554c4c")
+    $(".travel .travel_box .course_text>p>img").eq(btnIdx).addClass('on3');
+    $(".travel .travel_box .course_text>p>span").addClass('on3');
+    $(".travel .travel_box .course_text>p>span").eq(btnIdx).removeClass('on3');
+    $(".travel .travel_box .course_text>p>strong").eq(btnIdx).css("color", "#3375be")
+    $(".travel .course .course1").eq(btnIdx).addClass('on4');
+    $(".travel .map img").eq(btnIdx).addClass('on2');
+  })
+
 });
