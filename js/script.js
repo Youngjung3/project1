@@ -1,8 +1,8 @@
 $(function () {
-  document.querySelector("#layer button").addEventListener("click", function () {
-    document.querySelector("#layer").style.display = "none";
-  });
-
+  // document.querySelector("#layer button").addEventListener("click", function () {
+  //   document.querySelector("#layer").style.display = "none";
+  // $( "#draggable" ).draggable();
+  // });
   const visual = $(".main_slide_cover>li");
   const button = $("#buttonList>li");
   const button2 = $(".map>img")

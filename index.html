@@ -41,14 +41,15 @@
     <meta name="theme-color" content="#ffffff" >
     <title>울진군문화관광</title>
     <link rel="stylesheet" href="css/layout.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="layer">
+<!--     <div id="layer">
       <p>이 사이트는 학습용으로 제작하였으며 울진군문화관광과 무관합니다.
         구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
       </p>
         <button>닫기</button>
-    </div>
+    </div> -->
     <header id="header">
       <h1>울진군문화관광</h1>
       <ul class="link">
@@ -450,13 +451,6 @@
               <section>
                 <h2>화합으로 새로운 희망</h2>
               </section>
-              <div class="weather">
-                <p class="nowrap">
-                  12.16 금 09:44
-                  <span>22.0℃비</span>
-                  <button type="button"><img src="./images/weather_button.png" alt="조석정보">조석정보</button>
-                </p>
-              </div>
               <div class="main_text">
                 <p>하늘에서 즐기는 넘실대는 푸른 동해바다의 전경</p>
                 <h5>왕피천케이블카<input type="button" value="스토리텔링"></h5>
@@ -466,13 +460,6 @@
               <section>
                 <h2>화합으로 새로운 희망</h2>
               </section>
-              <div class="weather">
-                <p class="nowrap">
-                  12.16 금 09:44
-                  <span>22.0℃비</span>
-                  <button type="button"><img src="./images/weather_button.png" alt="조석정보">조석정보</button>
-                </p>
-              </div>
               <div class="main_text">
                 <p>바다를 가로지르는 스릴 넘치는 하늘 바닷길</p>
                 <h5>등기산공원&#47;스카이워크 <input type="button" value="스토리텔링"> <input type="button" value="사이버투어"></h5>
@@ -482,13 +469,6 @@
               <section>
                 <h2>화합으로 새로운 희망</h2>
               </section>
-              <div class="weather">
-                <p class="nowrap">
-                  12.16 금 09:44
-                  <span>22.0℃비</span>
-                  <button type="button"><img src="./images/weather_button.png" alt="조석정보">조석정보</button>
-                </p>
-              </div>
               <div class="main_text">
                 <p>서정적인 풍경이 한폭의 그림과 같은 폭풍속으로</p>
                 <h5>죽변드라마세트장 <input type="button" value="스토리텔링"> <input type="button" value="사이버투어"></h5>
@@ -498,13 +478,6 @@
               <section>
                 <h2>화합으로 새로운 희망</h2>
               </section>
-              <div class="weather">
-                <p class="nowrap">
-                  12.16 금 09:44
-                  <span>22.0℃비</span>
-                  <button type="button"><img src="./images/weather_button.png" alt="조석정보">조석정보</button>
-                </p>
-              </div>
               <div class="main_text">
                 <p>500백년 금강송으로 뒤덮인 힐링과 치유의 자연궁전 </p>
                 <h5>금강소나무숲길 <input type="button" value="스토리텔링"> <input type="button" value="사이버투어"></h5>
@@ -514,13 +487,6 @@
               <section>
                 <h2>화합으로 새로운 희망</h2>
               </section>
-              <div class="weather">
-                <p class="nowrap">
-                  12.16 금 09:44
-                  <span>22.0℃비</span>
-                  <button type="button"><img src="./images/weather_button.png" alt="조석정보">조석정보</button>
-                </p>
-              </div>
               <div class="main_text">
                 <p>신라 진덕여왕이 감탄한 명승 제6호 적송의 군란지</p>
                 <h5>불영사계곡</h5>
@@ -546,28 +512,71 @@
               <p>맞춤형 울진관광 추천 서비스</p>
             </div>
       </div>
+      <div id="container">
+        <p class="nowrap">
+          <a href="https://www.data.go.kr/data/15084084/openapi.do" target="_blank"><span>출처: 기상청<img src="./images/weather_button.png" alt="조석정보"></span></a>
+        </p>
+      </div>
     </main>
 
     <!-- youtube -->
     <div class="section1">
       <div class="inner2">
         <h6>여행소식을 전하는 생생정보플랫폼</h6>
-        <div class="youtube_content">
-          <a href="#" class="youtube_prev">
-            <i></i>
-            <em>울진 이현세 만화거리와 열차카페</em>
-            <span></span>
-          </a>
-          <div class="youtube">
-            <p><iframe width="560" height="315"  src="https://www.youtube.com/embed/ByqRpJZwXLE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-            <h5>울진 사용설명서 왕피천케이블카</h5>
-            <p>#울진 #힐링여행 #왕피천케이블카</p>
+        <div class="youtube_content sliderWrap">
+          <div class="videoSlider">
+            <div>
+              <a href="#" class="youtube_prev">
+                <i></i>
+                <em>울진 왕피천케이블카, 국립해양과학관</em>
+                <span></span>
+              </a>
+              <div class="youtube">
+                <p><video src="./video/video1.mp4" muted controls autoplay></video></p>
+                <h5>울진 사용설명서 왕피천케이블카</h5>
+                <p>#울진 #힐링여행 #왕피천케이블카</p>
+              </div>
+              <a href="#" class="youtube_next">
+                <i></i>
+                <em>울진 사용설명서 금강송에코리움편</em>
+                <span></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="youtube_prev">
+                <i></i>
+                <em>울진 사용설명서 왕피천케이블카편</em>
+                <span></span>
+              </a>
+              <div class="youtube">
+                <p><video src="./video/video2.mp4" muted controls autoplay></video></p>
+                <h5>울진 사용설명서 금강송에코리움편</h5>
+                <p>#울진 #힐링여행 #금강송숲</p>
+              </div>
+              <a href="#" class="youtube_next">
+                <i></i>
+                <em>울진 왕피천케이블카, 국립해양과학관</em>
+                <span></span>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="youtube_prev">
+                <i></i>
+                <em>울진 사용설명서 금강송에코리움편</em>
+                <span></span>
+              </a>
+              <div class="youtube">
+                <p><video src="./video/video3.mp4" muted controls autoplay></video></p>
+                <h5>울진 왕피천케이블카, 국립해양과학관</h5>
+                <p>#케이블카 #해양과학관 #새로운</p>
+              </div>
+              <a href="#" class="youtube_next">
+                <i></i>
+                <em>울진 사용설명서 왕피천케이블카편</em>
+                <span></span>
+              </a>
+            </div>
           </div>
-          <a href="#" class="youtube_next">
-            <i></i>
-            <em>울진 사용설명서 금강송에코리움편</em>
-            <span></span>
-          </a>
         </div>
       </div>
     </div>
@@ -1176,7 +1185,7 @@
     </div>
 
     <!-- banner -->
-    <div class="banner">
+    <!-- <div class="banner">
       <div class="banner_inner">
         <div class="banner_left">
           <a href="#"><span>관련사이트</span></a>
@@ -1199,7 +1208,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- footer -->
     <footer id="footer">
@@ -1231,7 +1240,12 @@
         <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://youngjung3.github.io/project1/" target="_blank"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="유효성검사"></a>
       </div>
     </footer>
-    <script src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+    
     <script src="js/script.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="js/script2.js"></script>
   </body>
 </html>
