@@ -545,7 +545,7 @@ main:after {
   margin-top: 900px;
   position: relative;
 }
-.section1 > .inner2::before{
+/* .section1 > .inner2::before{
   content: '';
   position: absolute;
   background: url(../images/background_youtube.png) no-repeat;
@@ -553,7 +553,7 @@ main:after {
   left: -279px;
   width: 100%;
   height: 100%;
-}
+} */
 .section1 > .inner2 h6 {
   padding: 100px;
   font-size: 14px;
@@ -593,11 +593,27 @@ main:after {
   width: 188px;
   text-align: right;
 }
-.section1 .inner2 .youtube_prev span{
+.section1 .inner2 .youtube_prev .y1-1{
   width: 116px;
   height: 116px;
   display: block;
-  background: url(../images/youtube01.jpg) no-repeat;
+  background: url(../images/y3.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.section1 .inner2 .youtube_prev .y2-1{
+  width: 116px;
+  height: 116px;
+  display: block;
+  background: url(../images/y1.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.section1 .inner2 .youtube_prev .y3-1{
+  width: 116px;
+  height: 116px;
+  display: block;
+  background: url(../images/y2.jpg) no-repeat;
   background-size: cover;
   border-radius: 50%;
 }
@@ -656,13 +672,33 @@ p {
   width: 188px;
   text-align: left;
 }
-.section1 .inner2 .youtube_next span{
+.section1 .inner2 .youtube_next .y1-2{
   position: relative;
   left: 20px;
   width: 116px;
   height: 116px;
   display: block;
-  background: url(../images/youtube02.jpg) no-repeat;
+  background: url(../images/y2.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.section1 .inner2 .youtube_next .y2-2{
+  position: relative;
+  left: 20px;
+  width: 116px;
+  height: 116px;
+  display: block;
+  background: url(../images/y3.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.section1 .inner2 .youtube_next .y3-2{
+  position: relative;
+  left: 20px;
+  width: 116px;
+  height: 116px;
+  display: block;
+  background: url(../images/y1.jpg) no-repeat;
   background-size: cover;
   border-radius: 50%;
 }
