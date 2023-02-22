@@ -10,7 +10,7 @@ const castBox=document.querySelector("#container")
 let statusText,rainIcon,locText;
 rainIcon = ['<i class="bi bi-brightness-high-fill"></i>', '<i class="bi bi-cloud-drizzle-fill"></i>', '<i class="bi bi-cloud-fog2-fill"></i>', '<i class="bi bi-lightning-fill"></i>', '<i class="bi bi-snow3"></i>'];
 
-var url = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
+var url = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
 let params={
   type:['getUltraSrtNcst','getVilageFcst'],
   key:'selMHZVUuZStmVQq9fGNK9oUN%2F%2B6HlnOTSorSUNn%2BVS3NpidZ4VMlp5ee%2BPjg88zxbjlg6ixLbtPQxPwz98lbw%3D%3D',
