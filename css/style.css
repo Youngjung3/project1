@@ -1,10 +1,11 @@
 @charset "utf-8";
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 body {
-  font-family: "NanumSQ", "나눔스퀘어", NanumGothic, "나눔고딕", sans-serif;
+  font-family: 'Noto Sans KR', "NanumSQ", "나눔스퀘어", NanumGothic, "나눔고딕", sans-serif;
 }
 /* layer popup */
 #layer {
@@ -1746,6 +1747,33 @@ p {
 #footer .footer_inner>a{
   color: #fff;
 }
-
-
+.sideNav{
+  position: fixed; 
+  top: 20%; 
+  right: 3%; 
+  transition: top 1s; 
+  z-index: 999; 
+  list-style: none;
+}
+.sideNav a{
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8em;
+  color: rgb(23, 23, 24);
+  margin-bottom: 1em;
+  padding: 0.5em 0.9em;
+  border-width: 1px;
+  border: 1px solid #cfd7dfbb;
+  border-image: initial;
+  text-decoration: none;
+  font-weight: 100;
+  text-decoration: none;
+  box-shadow: 7px 8px 18px rgb(23 47 72 / 10%);
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+.sideNav a:hover{
+  background-color: #3375be;
+  color: #fff;
+}
 

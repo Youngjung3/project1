@@ -82,7 +82,7 @@ $(function () {
   const course=$(".travel .travel_box .course_text p")
   course.click(function(){
     btnIdx = $(this).index()-1;
-    console.log(btnIdx);
+    // console.log(btnIdx);
     $(".travel .map img").removeClass('on2');
     $(".travel .travel_box .course_text>p>img").removeClass('on3');
     $(".travel .course .course1").removeClass('on4');
@@ -95,4 +95,9 @@ $(function () {
     $(".travel .map img").eq(btnIdx).addClass('on2');
   })
 
+  // var snav=$(".fixed_left")
+  // $(window).scroll(function () {
+  //   var scrollTop = $(window).scrollTop(); //scrollTop() : 브라우저의 위치 값
+  //   scrollTop > 100 ? story.addClass("fixed") : story.removeClass("fixed");
+  // })
 });

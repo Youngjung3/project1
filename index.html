@@ -41,7 +41,7 @@
     <meta name="theme-color" content="#ffffff" >
     <title>울진군문화관광</title>
     <link rel="stylesheet" href="css/layout.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" >
   </head>
   <body>
 <!--     <div id="layer">
@@ -518,9 +518,16 @@
         </p>
       </div>
     </main>
-
+    <ul class="sideNav">
+      <li><a href="#header">01</a></li>
+      <li><a href="#section1">02</a></li>
+      <li><a href="#travel">03</a></li>
+      <li><a href="#place3">04</a></li>
+      <li><a href="#story">05</a></li>
+      <li><a href="#footmenu">06</a></li>
+  </ul>
     <!-- youtube -->
-    <div class="section1">
+    <div class="section1" id="section1">
       <div class="inner2">
         <h6>여행소식을 전하는 생생정보플랫폼</h6>
         <div class="youtube_content sliderWrap">
@@ -582,7 +589,7 @@
     </div>
 
     <!-- travel -->
-    <div class="travel">
+    <div class="travel" id="travel">
       <div class="travel-inner">
         <div class="map">
             <img src="./images/map1.png" class="onmap1 on2" alt="북부권">
@@ -730,7 +737,7 @@
     </div>
 
     <!-- place3 -->
-    <div class="place3">
+    <div class="place3" id="place3">
      <div class="placebg">
      </div>
      <div class="place33">
@@ -753,7 +760,7 @@
     </div>
     
     <!-- story -->
-    <div class="story">
+    <div class="story" id="story">
       <p>이야기로 만나는 비대면(언택트) 관광</p>
       <div class="story-inner">
         <div class="story_left">
@@ -1109,7 +1116,7 @@
     </div>
 
     <!-- footmenu -->
-    <div class="footmenu">
+    <div class="footmenu" id="footmenu">
       <div class="wave"></div>
       <div class="footmenu_inner">
         <p>QUICK SERVIC</p>
@@ -1247,5 +1254,6 @@
     <script src="js/script.js"></script>
     <script src="js/script1.js"></script>
     <script src="js/script2.js"></script>
+    <script src="js/script3.js"></script>
   </body>
 </html>
